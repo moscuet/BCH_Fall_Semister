@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 
 const Notes = () => {
-  // Declare a new state variable, which we'll call "count"
   const [note, setNote] = useState('');
   const [notes, setNotes] = useState([]);
-  
 
 
   const taskDone =notes.filter( note => note.active===false).length
@@ -42,12 +40,11 @@ const handleDel =(id) =>{
 
 
  let lists = notes.map( (note) => (
-      <div className = 'note'>
         <li key={note.id} > 
             <p onClick ={ ()=>toggleActive(note.id)} className = {note.active?'':'inactive-text'} >{note.text}</p>  
             <button onClick = {() =>handleDel(note.id)}>delet</button>
         </li>
-      </div>
+    
     ))
   return (
     <div>
@@ -58,7 +55,6 @@ const handleDel =(id) =>{
         </div>
         <p> { notes.length>0 &&taskDone===notes.length? 'wow! mission accomplished': `Total task:${notes.length}, completed task ${taskDone}`}</p>
       <h3> Notes</h3>
-     
       <ol>{lists}</ol>
 
     </div>

@@ -2,13 +2,13 @@
 .inactive-text {
   text-decoration: line-through;
 }
-.note li p{
+ol li p{
  display: inline;
  margin-right: 10px;
  margin-bottom: 40px;
 }
 
-.note li {
+ol li {
   margin-bottom: 10px;
 }
 
