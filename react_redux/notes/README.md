@@ -1,7 +1,6 @@
+## Notes
 
-
-
-
+This is a simple react app with hooks which was done as an assignemnt at the beginning of the fall semester. 
 
 
 # Getting Started with Create React App
